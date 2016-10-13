@@ -1,0 +1,49 @@
+<h1 class="page-header">{{title}}</h1>
+
+<p class="lead">
+  What Gateways are active in the Bristol area and registered as part of the
+  Bristol LoRaWAN network? The table below is a list of all the ones we know
+  about and shows their current status.
+</p>
+<p>
+  Fancy building a gateway and contributing it to the Bristol LoRaWAN network?
+  Great, check out instructions on how to do this in a
+  <a routerLink="/gateway" routerLinkActive="active">gateway page</a>.
+</p>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>EUI</th>
+          <th>Uplink</th>
+          <th>Downlink</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let status of gatewaysStatus">
+
+          <td>{{ status.gateway_ID }}</td>
+
+          <td>
+            <div *ngIf="status.up_active">
+              <font color="green">&#10004;</font>
+            </div>
+          <div *ngIf="!status.up_active">
+              <font color="red">&#x2718;</font>
+          </div>
+          </td>
+
+          <td>
+            <div *ngIf="status.down_active">
+              <font color="green">&#10004;</font>
+            </div>
+            <div *ngIf="!status.down_active">
+              <font color="red">&#x2718;</font>
+            </div>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
