@@ -9,6 +9,9 @@ work with it for development. It uses the
 [angular-cli](https://github.com/angular/angular-cli), and this needs to be
 installed before development.
 
+The website is kindly hosted by the [Cube Cinema](www.cubecinema.com)
+at the domain [bristollorawanweb.org](www.bristollorawanweb.org).
+
 For additional information please an email to
 [lorab@bristollorawanweb.org](mailto:lorab@bristollorawanweb.org).
 
