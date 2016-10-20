@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GatewayComponent } from './gateway/gateway.component';
+import { MeetupComponent } from './meetup/meetup.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GatewayComponent } from './gateway/gateway.component';
     AboutComponent,
     HomeComponent,
     DashboardComponent,
-    GatewayComponent
+    GatewayComponent,
+    MeetupComponent
   ],
   imports: [
     BrowserModule,

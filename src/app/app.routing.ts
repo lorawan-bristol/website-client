@@ -6,12 +6,14 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GatewayComponent } from './gateway/gateway.component';
+import { MeetupComponent } from './meetup/meetup.component';
 
 const appRoutes: Routes = [
   { path: 'contact', component: ContactComponentComponent },
   { path: 'about', component: AboutComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'gateway', component: GatewayComponent },
+  { path: 'meetup', component: MeetupComponent },
   { path: '', component: HomeComponent }
 
 //  { path: '**', component: PageNotFoundComponent }
